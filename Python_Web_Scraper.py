@@ -21,7 +21,7 @@ title_tag = article_tag.find('h2', class_='story__title')
 content_tag = article_tag.find('div', class_='story__content')
 
 # Extracting text from all paragraph tags in content_tag
-paragraph_strings = [p.text for p in content_tag.find_all('p', recursive=False) if p.text.strip() != ''] # list of paragraphs text
+paragraph_strings = [p.text for p in content_tag.find_all('p', recursive=False)] # list of paragraphs text
 
 # Final output
 article = {
